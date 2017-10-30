@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$USER_HOME$/Downloads/jQuery仿搜狗拼音焦点图广告切换" />
+    <content url="file://$MODULE_DIR$/../../JS/10.13 jquery" />
+    <content url="file://$MODULE_DIR$/../../JS/10.17" />
+    <content url="file://$MODULE_DIR$/../../JS/jquery10.16" />
+    <content url="file://$MODULE_DIR$/../../JS/图片点击放大10.16" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <content url="file://$MODULE_DIR$/../九九乘法表" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

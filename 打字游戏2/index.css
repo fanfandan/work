@@ -1,0 +1,124 @@
+/*
+* @Author: surpe
+* @Date:   2017-09-28 14:26:27
+* @Last Modified by:   surpe
+* @Last Modified time: 2017-09-29 13:19:09
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	overflow: hidden;
+	padding: 0 200px;
+	
+}
+.ng{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: url('img/timg.jpg') no-repeat center;
+    background-size: 100% 100%;
+    opacity: 0.4;
+}
+.char{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+	text-align: center;
+	line-height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 0;
+}
+.box{
+	width: 150px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.score{
+	    width: 90px;
+    height: 200px;
+    border-radius: 10px;
+    /* background: pink; */
+    margin: 20px 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+    background: url(img/137.png) no-repeat center;
+    background-size: 200%;
+    font-size: 16px;
+}
+.score{
+	animation:mymove 3s ease-in-out infinite ;
+}
+@-webkit-keyframes mymove {
+    0%{
+        
+        -webkit-transform: translateX(0)   
+    }
+    25%{
+       -webkit-transform: translateX(20px)   
+    }
+    50%{
+       -webkit-transform: translateX(0)   
+    }
+    75%{
+      -webkit-transform: translateX(-20px)   
+    }
+     100%{
+      -webkit-transform: translateX(0)   
+    }
+}
+.hp{
+	width: 130px;
+    height: 220px;
+    margin: 0 20px;
+    padding: 30px 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+    background: url(img/604.png) no-repeat center;
+    background-size: 76%;
+    font-size: 16px;
+    position: absolute;
+    left: 70px;
+    box-sizing: border-box;
+}
+.hp{
+	animation:mymove 3s ease-in-out infinite ;
+}
+@-webkit-keyframes mymove {
+    0%{
+        
+        -webkit-transform: translateX(25px)   
+    }
+    25%{
+       -webkit-transform: translateX(50px)   
+    }
+    50%{
+       -webkit-transform: translateX(25px)   
+    }
+    75%{
+      -webkit-transform: translateX(0px)   
+    }
+     100%{
+      -webkit-transform: translateX(25px)   
+    }
+}

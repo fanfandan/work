@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="back">
+        <h1><a href="">重新开始</a></h1>
+    </div>
+    <div class="container">
+        <div class="left">剩余时间:<span id="sec">30</span>s</div>
+        <div class="right">分数：<span id="score">0</span></div>
+        <ul class="main">
+            <li class="list1"><img src="img/1.png" alt=""></li>
+        </ul>
+        <button>点击开始游戏</button>
+    </div>
+    <script>
+        var btn=document.querySelector('button');
+        var z=30.00;
+        var sec=document.getElementById('sec');
+        var ul=document.querySelector('ul');
+        var li=document.getElementsByClassName('list1')[0];
+        var score=document.getElementById('score');
+        var level=1;
+        var n=0;
+        var turnOff=document.getElementById('turnOff');
+
+        var back=document.getElementById('back');
+    btn.onclick=function () {
+          let timer=setInterval(fn,10);
+          function fn(){
+              z-=0.01;
+              z=z.toFixed(2);
+              sec.innerHTML=z;
+              if(z<=0){
+                  clearInterval(timer);
+                  if(n<=2){
+                      alert('GAME OVER' + ' '+'等级：睁眼瞎');
+                  }
+                  else if(n<=4){
+                      alert('GAME OVER' + ' '+'等级：超神');
+                  }
+                  else if(n<=6){
+                      alert('GAME OVER' + ' '+'等级：火眼精金');
+                  }
+                  else {
+                      alert('GAME OVER' + '高度近视');
+                  }
+               back.style.display='block';
+              }
+
+          }
+        btn.remove();
+        li.remove();
+
+        addimg();
+        function addimg(){
+            level++;
+            for(let i=0;i<level*level;i++){
+                let lis=document.createElement('li');
+                ul.appendChild(lis);
+                let imgs=document.createElement('img');
+                lis.appendChild(imgs);
+                lis.style.width=100/level+'%';
+                lis.style.float='left';
+                imgs.style.display='block';
+                imgs.style.width=100+'%';
+                imgs.src='img/1.png';
+                imgs.style.background='rgb('+rand(0,255)+','+rand(0,255)+','+rand(0,255)+')';
+            }
+
+            let x=rand(0,level*level-1);
+            let  imgs1=document.querySelectorAll('img')
+            imgs1[x].src='img/2.png';
+            let lis1=document.querySelectorAll('li')
+            lis1[x].onclick=function () {
+                for(let i=0;i<level*level;i++){
+                    lis1[i].remove();
+                }
+                n++;
+                score.innerHTML=n;
+                if(level>10){
+                    level=10;
+                }
+                addimg();
+            }
+        }
+      }
+
+      function rand(min,max){
+          return Math.round(Math.random()*(max-min)+min);
+      }
+
+    </script>
+</body>
+</html>

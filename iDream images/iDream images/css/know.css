@@ -1,0 +1,468 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+body{
+	/*background: #F5F5F5;*/
+}
+a{
+	text-decoration: none;
+	border: none;
+}
+li{
+	list-style: none;
+}
+/* 头部开始 */
+.header{
+	width: 100%;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	z-index: 999;
+}
+#header{
+	width: 100%;
+	height: 90px;
+}
+.header .nav{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.header .nav .log{
+	width: 130px;
+	position: absolute;
+	left: 70px;
+	top: 2px;
+	overflow: hidden;
+	background-size: 130% 130%;
+}
+.header .nav .log a{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+.nav .log a img{
+	width: 100%;
+	height: 100%;
+}
+.header .nav ul{
+	width: 593px;
+	height: 25px;
+	float: right;
+	display: flex;
+	margin-top:30px;
+	justify-content: space-around;
+}
+.header .nav ul li{
+	float: left;
+	overflow: hidden;
+	width:128px;
+	position: relative;
+
+}
+.header .nav ul li a:hover span{
+	display: block;
+
+}
+.header .nav ul li a:hover{
+	margin-top: -15px;
+	color: white !important;
+}
+.header .nav ul li a {
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,.5) !important;
+	font-size: 13px;
+	display: block;
+	text-align: center;
+}
+.header .nav ul li a span{
+	display: none;
+}
+/* 头部结束 */
+/* 轮播开始 */
+.elunbo{
+	width: 100%;
+	height: 347px;
+	position: relative;
+}
+.zhezhao{
+	width: 100%;
+	height: 347px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lunbo{
+	width: 100%;
+	height: 347px;
+	background: url('../img/lianxi.png') no-repeat center;
+}
+.elunbo .title{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: 50%;
+	margin-left: -90px;
+	animation: myplay 2s linear;
+}
+.elunbo .title .cha{
+	color: rgb(255, 255, 255);
+	font-size: 36px;
+	text-align: center;
+	text-indent: 5px;
+	letter-spacing: 10px;
+	font-family: 微软雅黑;
+}
+.elunbo .title .line{
+	text-align: center;
+	width: 220px;
+	height: 3px;
+	background: #fff;
+	margin: 10px auto;
+}
+.elunbo .title .lianxi{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 10px;
+}
+.dh li a .active1{
+	position: absolute;
+	left: 15px;
+	top: 7px;
+	background: red !important;
+	display: none;
+	width: 6px !important;
+	height: 6px !important;
+	border-radius: 100%;
+}
+/* 轮播结束 */
+.text{
+	margin-top: 68px;
+	/* width: 200px; */
+	height: 52px;
+}
+.text .h4{
+	color: grey;
+	font-size: 30px;
+	margin-left: 957px;
+}
+.text .h3{
+	margin-left: 11px;
+	margin-top:11px; 
+	color: grey;
+}
+/* 内容开始 */
+.contents{
+	width: 920px;
+	height: auto;
+	margin-top: 172px;
+	margin-left: 255px;
+}
+.contents .top{
+	width: 100%;
+	height: 553px;
+	position: relative;
+}
+.contents .top img{
+	width: 340px;
+	height: 352px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contents .top  .title{
+	width: 343px;
+	height: 420px;
+	position: absolute;
+	left: 443px;
+	top: 0;
+	/* background: pink; */
+}
+.contents .top  .title .p1{
+	margin: 26px auto;
+	width: 230px;
+	height: 30px;
+	font-size: 30px;
+
+}
+.top  .title  .neirong{
+	width: 346px;
+	height: 323px;
+	margin-top: 40px;
+	/* background: lightblue; */
+	
+}
+.top  .title  .neirong .p2{
+	font-size: 14px;
+	line-height: 26px;
+}
+.top .careful{
+	width: 350px;
+	height: 85px;
+	font-size: 14px;
+	line-height: 26px;
+	color: red;
+	position: absolute;
+	top: 420px;
+}
+.contents .center{
+	width: 662px;
+	height: 42px;
+	margin: 85px auto;
+}
+.contents .center .span1{
+	font-size: 20px;
+	color: red;
+}
+/* 注意事项开始 */
+.contents .bottom{
+	width: 100%;
+	height: 553px;
+	position: relative;
+}
+.contents .bottom img{
+	width: 340px;
+	height: 352px;
+	position: absolute;
+	top: 0;
+	left: 443px;
+}
+.contents .bottom  .title{
+	width: 343px;
+	height: 420px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	/* background: pink; */
+}
+.contents .bottom  .title .p1{
+	margin: 26px auto;
+	width: 230px;
+	height: 30px;
+	font-size: 30px;
+
+}
+.bottom  .title  .neirong{
+	width: 346px;
+	height: 323px;
+	margin-top: 40px;
+	/* background: lightblue; */
+	
+}
+.bottom  .title  .neirong .p2{
+	font-size: 14px;
+	line-height: 26px;
+}
+.bottom .careful{
+	width: 350px;
+	height: 85px;
+	font-size: 14px;
+	line-height: 26px;
+	color: red;
+	position: absolute;
+	top: 420px;
+}
+/* 注意事项结束 */
+/* 女生注意事项开始 */
+.girls{
+	width: 812px;
+	height: 673px;
+	margin-left: 150px;
+	/* background: pink; */
+	position: relative;
+}
+.girls .beijing{
+	width: 672px;
+	height: 492px;
+	background: #E2E2E2;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.girls .beijing .title{
+	width: 221px;
+	height: 54px;
+	background: #F9F9F9;
+	margin-top: -39px;
+	margin-left: 179px;
+	text-align: center;
+	line-height: 54px;
+	font-size: 28px;
+}
+.girls .beijing  .neirong{
+	width: 221px;
+	height: 284px;
+	margin-top: 7px;
+	margin-left: 179px;
+	background: #F9F9F9;
+	padding-top: 15px;
+	padding-left: 24px;
+	padding-right: 24px;
+	margin-bottom: 47px;
+	font-size: 14px;
+	box-sizing: border-box;
+	line-height: 22px;
+
+}
+.girls .beijing  .neirong1{
+	width: 221px;
+	height: 108px;
+	margin-top: 7px;
+	margin-left: 179px;
+	background: #F9F9F9;
+	padding-top: 15px;
+	padding-left: 24px;
+	padding-right: 24px;
+	margin-bottom: 47px;
+	font-size: 14px;
+	box-sizing: border-box;
+	line-height: 22px;
+}
+/* 女生注意事项结束 */
+/* 左边开始 */ 
+.girls .left{
+	width: 287px;
+	height: 563px;
+	background: white;
+	position: absolute;
+	top: 119px;
+	left: 0;
+}
+.girls .left .img, img{
+	width: 261px;
+	height: 228px;
+}
+.girls .left .img{
+	margin-top: 19px;
+}
+.girls .left .neirong{
+	width: 265px;
+	height: 432px;
+	font-size: 14px;
+	line-height: 22px;
+    margin-top: 33px;
+}
+/* 左边结束 */
+/* 内容结束 */
+/* 底部开始 */
+.footer{
+	background: #222222;
+	padding: 2em 0;
+	color: #888888;
+	line-height: 30px;
+	padding-top: 35px;
+	font-size: 0.93em;
+	height: 220px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 100px;
+}
+.footer a{
+	color:#888888;
+}
+.footer a:hover{
+	text-decoration:none;
+}
+.footer-left{
+	float:left;
+	width:600px;
+	margin-left:25px;
+}
+.footer-left p{
+	margin:20px 0;
+	clear:both;}
+.footer-left p a{
+	padding:0 1.5em;
+	display:block;
+	float:left;
+	border-right:1px solid #838383;
+	height:16px;
+	line-height:16px;
+	margin:0 0 35px 0;
+}
+.footer-left p a:hover{
+	color:#2d8acb;
+}
+.footer-left p a:first-child{
+	padding-left:0;
+}
+.footer-left p a:last-child{
+	border-right:none;
+}
+.footer-left .a4{
+	background:url(../img/400-888-88881.png) no-repeat;
+	background-size:cover;
+	min-width:199px;
+	display:block;
+	float:left;
+	height:50px;
+	border:none;
+	margin:0 60px 0px 0; }
+.footer-left .a4:hover{
+	background:url(../img/400-888-88881-h.png) no-repeat;
+}
+.footer-left .a5{
+	background:url(../img/may8@live.png) no-repeat;
+	background-size:cover;
+	min-width:194px;
+	height:50px;
+	border-right:none 0px;
+	margin:0 0 0px 0;}
+.footer-left .a5:hover{
+	background:url(../img/may8@live-h.png) no-repeat;
+}
+.footer-right{
+	float:right;
+	text-align:center;
+	border-left:1px solid #434343;
+	padding:30px 10px;
+	margin-top:20px;}
+.footer-right ul li{
+	display:block;
+	float:left;
+	margin:0 10px;
+	width:80px;
+	float:left;
+	display:block;
+	text-align:center;
+}
+.footer-right ul li .a1{
+	background:url(../img/icon-05.png) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.footer-right ul li .a1:hover{
+	background:url(../img/icon-05-h.png) center no-repeat;
+}
+.footer-right ul li .a2{
+	background:url(../img/icon-06.png) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.footer-right ul li .a2:hover{
+	background:url(../img/icon-06-h.png) center no-repeat;
+}
+.footer-right ul li .a3{
+	background:url(../img/icon-07.png ) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;}
+.footer-right ul li .a3:hover{
+	background:url(../img/icon-07-h.png) center no-repeat;
+}
+/* 底部结束 */

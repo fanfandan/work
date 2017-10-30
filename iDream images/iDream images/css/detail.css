@@ -1,0 +1,368 @@
+*{
+	  margin: 0;
+	  padding: 0;
+	  font-family: '微软雅黑';
+  }
+body{
+	/*background: #F5F5F5;*/
+}
+a{
+	text-decoration: none;
+	border: none;
+}
+li{
+	list-style: none;
+}
+/* 头部开始 */
+.header{
+	width: 100%;
+	height: 80px;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	z-index: 999;
+}
+#header{
+	width: 100%;
+	height: 90px;
+}
+.header .nav{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.header .nav .log{
+	width: 130px;
+	position: absolute;
+	left: 70px;
+	top: 2px;
+	overflow: hidden;
+	background-size: 130% 130%;
+}
+.header .nav .log a{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+.nav .log a img{
+	width: 100%;
+	height: 100%;
+}
+.header .nav ul{
+	width: 593px;
+	height: 25px;
+	float: right;
+	display: flex;
+	margin-top:30px;
+	justify-content: space-around;
+}
+.header .nav ul li{
+	float: left;
+	overflow: hidden;
+	width:128px;
+	position: relative;
+
+}
+.header .nav ul li a:hover span{
+	display: block;
+
+}
+.header .nav ul li a:hover{
+	margin-top: -15px;
+	color: white !important;
+}
+.header .nav ul li a {
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,.5) !important;
+	font-size: 13px;
+	display: block;
+	text-align: center;
+}
+.header .nav ul li a span{
+	display: none;
+}
+/* 头部结束 */
+/* 轮播开始 */
+.elunbo{
+	width: 100%;
+	height: 347px;
+	position: relative;
+}
+.zhezhao{
+	width: 100%;
+	height: 347px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lunbo{
+	width: 100%;
+	height: 347px;
+	background: url('../img/lianxi.png') no-repeat center;
+}
+.elunbo .title{
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	left: 50%;
+	margin-left: -90px;
+	animation: myplay 2s linear;
+}
+.elunbo .title .cha{
+	color: rgb(255, 255, 255);
+	font-size: 36px;
+	text-align: center;
+	text-indent: 5px;
+	letter-spacing: 10px;
+	font-family: 微软雅黑;
+}
+.elunbo .title .line{
+	text-align: center;
+	width: 220px;
+	height: 3px;
+	background: #fff;
+	margin: 10px auto;
+}
+.elunbo .title .lianxi{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 10px;
+}
+.dh li a .active1{
+	position: absolute;
+	left: 15px;
+	top: 7px;
+	background: red !important;
+	display: none;
+	width: 6px !important;
+	height: 6px !important;
+	border-radius: 100%;
+}
+/* 轮播结束 */
+/* 内容上开始 */
+.sencetop{
+	width: 1200px;
+	height: 328px;
+	margin: 50px auto;
+}
+.tupiand{
+	display: inline-block;
+}
+.sencetop img{
+	width: 491px;
+	height: 328px;
+} 
+.sencetop .right{
+	width: 667px;
+	height: 328px;
+	float: right;
+	border: 1px solid black;
+	text-align: center;
+}
+.sencetop .right p{
+	margin-top: 80px;
+	font-size: 24px;
+}
+.sencetop .right .hengxian{
+	width: 70px;
+	height: 2px;
+	background: grey;
+	margin-top: 10px;
+	margin-left: 300px
+}
+.sencetop .right h4{
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 40px;
+}
+.sencetop .right h3{
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 30px;
+}
+/* 内容上结束 */
+/* 图片开始 */
+.photos{
+	width: 1200px;
+	height: 452px;
+	margin: 0 auto;
+}
+.photos ul a img{
+    height: 133px;
+    width: auto;
+    display: block;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    float: left;
+}
+#imgbox-loading { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	cursor: pointer; 
+	display: none; 
+	z-index: 90; }
+#imgbox-loading div { 
+	background: #FFF; 
+	width: 100%; 
+	height : 100%; }
+#imgbox-overlay { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background: #000; 
+	display: none; 
+	z-index: 80; }
+.imgbox-wrap { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	background: #FFF; 
+	display: none; 
+	z-index: 90; }
+.imgbox-img { 
+	padding: 0; 
+	margin: 0; 
+	border: none; 
+	width: 100%; 
+	height: 100%; 
+	vertical-align: top; 
+}
+.imgbox-title { 
+	padding-top: 10px; 
+	font-size: 11px; 
+	text-align: center; 
+	font-family: Arial; 
+	color: #333; 
+	display: none; }
+.imgbox-bg-wrap { 
+	position: absolute; 
+	padding: 0; 
+	margin: 0; 
+	display: none; }
+.imgbox-bg { 
+	position: 
+	absolute; 
+	width: 20px; 
+	height: 20px; }
+/* 图片结束 */
+/* 底部开始 */
+.footer{
+	background: #222222;
+	padding: 2em 0;
+	color: #888888;
+	line-height: 30px;
+	padding-top: 35px;
+	font-size: 0.93em;
+	height: 220px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.footer a{
+	color:#888888;
+}
+.footer a:hover{
+	text-decoration:none;
+}
+.footer-left{
+	float:left;
+	width:600px;
+	margin-left:25px;
+}
+.footer-left p{
+	margin:20px 0;
+	clear:both;}
+.footer-left p a{
+	padding:0 1.5em;
+	display:block;
+	float:left;
+	border-right:1px solid #838383;
+	height:16px;
+	line-height:16px;
+	margin:0 0 35px 0;
+}
+.footer-left p a:hover{
+	color:#2d8acb;
+}
+.footer-left p a:first-child{
+	padding-left:0;
+}
+.footer-left p a:last-child{
+	border-right:none;
+}
+.footer-left .a4{
+	background:url(../img/400-888-88881.png) no-repeat;
+	background-size:cover;
+	min-width:199px;
+	display:block;
+	float:left;
+	height:50px;
+	border:none;
+	margin:0 60px 0px 0; }
+.footer-left .a4:hover{
+	background:url(../img/400-888-88881-h.png) no-repeat;
+}
+.footer-left .a5{
+	background:url(../img/may8@live.png) no-repeat;
+	background-size:cover;
+	min-width:194px;
+	height:50px;
+	border-right:none 0px;
+	margin:0 0 0px 0;}
+.footer-left .a5:hover{
+	background:url(../img/may8@live-h.png) no-repeat;
+}
+.footer-right{
+	float:right;
+	text-align:center;
+	border-left:1px solid #434343;
+	padding:30px 10px;
+	margin-top:20px;}
+.footer-right ul li{
+	display:block;
+	float:left;
+	margin:0 10px;
+	width:80px;
+	float:left;
+	display:block;
+	text-align:center;
+}
+.footer-right ul li .a1{
+	background:url(../img/icon-05.png) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.footer-right ul li .a1:hover{
+	background:url(../img/icon-05-h.png) center no-repeat;
+}
+.footer-right ul li .a2{
+	background:url(../img/icon-06.png) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.footer-right ul li .a2:hover{
+	background:url(../img/icon-06-h.png) center no-repeat;
+}
+.footer-right ul li .a3{
+	background:url(../img/icon-07.png ) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;}
+.footer-right ul li .a3:hover{
+	background:url(../img/icon-07-h.png) center no-repeat;
+}
+/* 底部结束 */

@@ -1,0 +1,1004 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+body{
+	position: relative;
+	/*background: #F5F5F5;*/
+}
+a{
+	text-decoration: none;
+	border: none;
+}
+li{
+	list-style: none;
+}
+.header{
+	width: 100%;
+	height: 90px;
+	background: black;
+	position: fixed;
+	z-index: 999;
+}
+#header{
+	width: 100%;
+	height: 90px;
+}
+.header .nav{
+	width: 1200px;
+	height: 100%;
+	background: black;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.header .nav .log{
+	width: 143px;
+	height: 100%;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    overflow: hidden;
+    background: url('../img/logo1.png') no-repeat center;
+    background-size: 130% 130%;
+}
+.header .nav .log a{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+.nav .log a img{
+	width: 100%;
+	height: 100%;
+}
+.header .nav ul{
+	width: 643px;
+	height: 25px;
+	position: absolute;
+	left: 200px;
+	top: 38px;
+	display: flex;
+	justify-content: space-around;
+}
+.header .nav ul li{
+	float: left;
+	
+}
+.header .nav ul li a:hover{
+	border-bottom: 1px solid white;
+}
+.header .nav ul li a{
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+}
+/* 头部结束 */
+/* 服务开始 */
+
+.fuwu-title{
+   width: 100%;
+   height: 90px;
+   margin-top: 550px;
+   margin-bottom: 50px;
+
+   /* justify-content: center; */
+  /*  display: flex; */
+   /* justify-content: center; */
+   /* flex-wrap: wrap-reverse; */
+   /* align-content: space-around; */
+}
+.fuwu-title p{
+	font-size: 36px;
+	margin-bottom: 40px;
+   text-align: center;
+}
+
+.fuwu-title .h3{
+	font-size: 16px;
+	color: rgb(153, 153, 153);
+	text-align: center;
+    margin-top: -5px;
+}
+/* 服务结束 */
+/* 服务项目图片开始 */
+.sever{
+	width: 1200px;
+	height: 520px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+
+}
+.sever ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.sever ul li{
+	width: 354px;
+	height: 100%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+.sever ul li .zhezhao{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sever ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-left: -60px;
+    margin-top: -50px;
+    font-family: '微软雅黑';
+    display: none;
+}
+/*.grayscale img{
+	filter: grayscale(100%);
+}
+.grayscale:hover{
+	filter: grayscale(0);
+}*/
+.sever ul li img{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/* 服务项目图片结束 */
+/* 咨询开始 */
+.advise{
+	width: 100%;
+	height: 613px;
+	background: url('../img/1.jpg');
+	padding-top: 100px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.advise .zhezhao{
+	background: pink;
+}
+.advise .contents{
+	width: 840px;
+	height: 413px;
+	background: rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+}
+.advise .contents .box{
+	width: 689px;
+	height: 413px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 48px;
+	box-sizing: border-box;
+	color: white;
+
+}
+.advise .contents  h3{
+   margin: 10px auto;
+   width: 300px;
+}
+.advise .contents  h3 img{
+	width: 100%;
+	height: 100%;
+}
+.advise .contents .box .p2{
+	color: white;
+
+	margin-bottom: 10px;
+}
+.advise .contents .btn1{
+	width: 200px;
+	height: 53px;
+	margin: 0 auto;
+	border: 2px solid white;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 53px;
+	box-sizing: border-box;
+	transition: all 1.5s;
+}
+.advise .contents .btn1:hover{
+	background: lightblue;
+	border: none;
+	font-size: 20px;
+}
+.advise .contents .btn1 a{
+	color: white;
+}
+/* 咨询结束 */
+/* 服务项目开始 */
+.e{
+	width: 100%;
+	height: 541px;
+	position: relative;
+}
+.e .zhezhao{
+	width: 100%;
+	height: 541px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* background: rgba(0, 0, 0, 0.5); */
+
+}
+.evaluate{
+	width: 100%;
+	height: 541px;
+	margin: 100px auto;
+	text-align: center;
+	padding-top: 80px;
+	box-sizing: border-box;
+	background: url('../img/paishechangjing.jpg') no-repeat center;
+}
+.evaluate img{
+	width: 300px;
+}
+.evaluate .hengxian{
+	width: 60px;
+	height: 3px;
+	background: #48b4c2;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+}
+.evaluate .h3{
+	font-size: 16px;
+	color: rgb(153, 153, 153);
+	text-align: center;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+.evaluate   .btn1{
+	width: 200px;
+	height: 53px;
+	margin: 0 auto;
+	/* background: lightblue; */
+	border: 1px solid white;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 53px;
+	box-sizing: border-box;
+	margin-left: 820px;
+	transition: all 1.5s;
+}
+.evaluate   .btn1:hover{
+	background: black;
+	border: none;
+	font-size: 20px;
+}
+.evaluate  .btn1 a{
+	color: white;
+}
+/* 服务项目结束 */
+/* 关于我们开始 */
+.about{
+	margin-top: 120px;
+	width: 100%;
+	height: 743px;
+	background: url('../img/aboutusindex.jpg');
+	text-align: center;
+	position: relative;
+	
+}
+.about .zhezhao{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0,0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.about .box{
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.about img{
+	width: 300px;
+	margin-bottom: 15px;
+}
+.about .hengxian{
+	width: 60px;
+	height: 3px;
+	background: #48b4c2;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+}
+.about .h3{
+	font-size: 16px;
+	color: white;
+	text-align: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.about .content{
+	width: 1200px;
+	height: 330px;
+	margin: 0 auto;
+}
+.about .content img{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.about .content .right{
+	width:50%;
+	height: 100%;
+	background: white;
+	float: right;
+	padding: 45px;
+	box-sizing: border-box;
+}
+.right .list-text .a1{
+	width: 200px;
+	height: 30px;
+	font-size: 24px;
+	color: black;
+	display: block;
+	margin-bottom: 40px;
+}
+.right .list-text p{
+	float: left;
+	margin-bottom: 60px;
+
+}
+.right .list-text .a2{
+	color: lightblue;
+	float: left;
+}
+.about   .btn1{
+	width: 200px;
+	height: 53px;
+	margin: 0 auto;
+	background: lightblue;
+	text-align: center;
+	margin-top: 30px;
+	line-height: 53px;
+	box-sizing: border-box;
+		transition: all 1.5s;
+}
+.about  .btn1:hover{
+	background: black;
+	border: none;
+	font-size: 20px;
+}
+.about .btn1 a{
+	color: white;
+}
+/* 关于我们结束 */
+/* 向上 图标开始*/
+.up{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #ff0000;
+	/*display: none;*/
+	position: fixed;
+	right: 20px;
+	bottom: 60px;
+	z-index: 5;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+/* 向上图标结束 */
+/*侧边固定开始*/
+.leftconntect{
+	width:40px;
+	height:270px;
+	position: fixed;
+	top:40%;
+	left:30px;
+	z-index: 999;
+}
+.leftconntect .zuo {
+	width: 40px;
+	height: 270px;
+}
+ .zuo li{
+	width:100%;
+	height:44px;
+	background: rgba(186, 182, 182, 0.3);
+	margin-top: 10px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 44px;
+	color:white;
+}
+.leftconntect .zuo  li:hover{
+	background: rgba(218,0,22,.5);
+}
+.leftconntect .iconfont{
+   font-size: 24px;
+}
+.rightconntect{
+	color: #fff;
+	font-size: 12px;
+	width: 350px;
+	padding-left: 10px;
+	position: absolute;
+	top: 0;
+	left: 46px;
+	display: none;
+
+}
+.rightconntect span{
+	box-sizing: border-box;
+	padding-left:8px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-top: 8px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+.leftconntect span:hover{
+	background: rgba(218,0,22,.5);
+}
+.rightconntect2 {
+	color: #fff;
+	font-size: 12px;
+	width: 230px;
+	padding-left: 10px;
+	position: absolute;
+	top: 55px;
+	left: 46px;
+	display:none;
+
+}
+.rightconntect2 span{
+	padding-left: 8px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin-top: 8px;
+	float:left;
+	height: 30px;
+	line-height: 30px;
+}
+.leftconntect .zhaopian{
+	width:30px;
+	height:30px;
+
+}
+.limian li h3{
+	margin-top: -7px;
+	height: 10px;
+	text-align: center;
+	line-height: 1px;
+}
+.leftconntect .qq .limian {
+	width: 140px;
+	display: flex;
+}
+.leftconntect .qq .limian li{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.leftconntect .weibo{
+	width:100px;
+	height:100px;
+	position: absolute;
+	top:120px;
+	left:56px;
+	display: none;
+}
+.leftconntect .weixin{
+	width:100px;
+	height:100px;
+	position: absolute;
+	top:230px;
+	left:56px;
+	display: none;
+}
+.leftconntect .qq{
+	color: #fff;
+	font-size: 12px;
+	width: 140px;
+	padding-left: 10px;
+	position: absolute;
+	top: 170px;
+	left: 56px;
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 62px;
+	border-radius: 4px;
+	display: none;
+}
+/*侧边固定结束*/
+/*顶部右边导航开始*/
+.daohang{
+	width: 120px;
+	height: 32px;
+	position: fixed;
+	top:20px;
+	right:30px;
+	z-index:999;
+	padding: 9px 20px 6px 12px;
+	background: url("../img/menu.png") center no-repeat;
+	cursor: pointer;
+	background-color: rgba(0,0,0,.2)
+}
+.newp{
+	width:100%;
+	height: 100%;
+	transform: scale(0,0);
+	transition: all 0.5s;
+	position: fixed;
+	top:-15px;
+	left:0;
+	z-index: 999999999;
+	transition: all 0.5s;
+}
+
+.hot5{
+	/*display: block;*/
+	transform: scale(1,1);
+}
+.ntop{
+	width:100%;
+	height: 65%;
+    background: rgba(0, 0, 0, .84);;
+}
+/*新页面开始*/
+.rightclose{
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	z-index: 99999;
+	padding: 9px 20px 6px 12px;
+}
+.rightclose img{
+	width:100%;
+	height:100%;
+}
+.ntop .header2{
+	height: 80px;
+	width: 50%;
+	margin: 15px auto 20px;
+}
+.ntop .header2 .s1{
+	width:140px;
+	float: left;
+}
+.ntop .header2 .s1 img{
+	width:100%;
+	height:100%;
+}
+.ntop .header2 .s2{
+	display: block;
+	width: 80px;
+	float: left;
+	margin: 60px 0 0 27px;
+	color: #FFF;
+	position: relative;
+	padding-left: 25px;
+}
+.ntop .header2 .s2 p{
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 18px;
+	height: 2px;
+	top: -45px;
+}
+.ntop .wenzi{
+	width: 61%;
+	margin: 0 auto;
+	text-align: left;
+}
+.ntop .wenzi .npul li{
+	width: 270px;
+	height: 100px;
+	box-sizing: border-box;
+	float: left;
+	color: white;
+	padding-left: 60px;
+	position: relative;
+	cursor: pointer;
+
+}
+.ntop .wenzi .npul li .p1{
+	position: absolute;
+	top: 10px;
+	margin-bottom: 10px;
+}
+.ntop .wenzi .npul li .p2{
+	position: absolute;
+	top: 40px;
+	margin-bottom: 10px;
+}
+.ntop .wenzi li .line{
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	top: 75px;
+	background: white
+}
+/*下半部分开始*/
+.nbottom{
+	width: 100%;
+	height:50%;
+	margin-top: -50px;
+}
+.nbottom .left{
+	width: 50%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	top:0;
+}
+.nbottom .left img{
+	width:100%;
+	height:100%;
+	transition: all 1.5s;
+}
+.cententleft{
+	position: absolute;
+	top: 22%;
+	left: 30%;
+	color: #fff;
+	font-size: 18px;
+}
+.cententleft .shop{
+	font-size: 18px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.cententleft .ti{
+	display: block;
+	width: 35px;
+	height: 2px;
+	background: #fff;
+	transition: 1s all;
+}
+.cententleft .enlish{
+	font-size: 32px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+.cententleft .TEL{
+	height: 32px;
+	background: url(../img/icon_tel.png) no-repeat;
+	background-size: 30px 30px;
+	text-indent: 36px;
+	margin-bottom: 16px;
+}
+.cententleft .address{
+	height: 32px;
+	background: url(../img/icon_address.png) no-repeat;
+	background-size: 30px 30px;
+	text-indent: 36px;
+	margin-bottom: 26px;
+}
+.cententleft .bi{
+	display: block;
+	width: 90px;
+	height: 2px;
+	background: #fff;
+	transition: 1s all;
+}
+.cententleft img:hover{
+	transform: scale(1.2,1.2);
+}
+/*下半部分结束*/
+/*新页面结束*/
+/*顶部右边导航结束*/
+/*顶部导航开始*/
+.ban{
+	width:100%;
+	height:638px;
+	position: relative;
+	overflow: hidden;
+
+}
+.ban .banul{
+	width:100%;
+	height:638px;
+	position: relative;
+	overflow: hidden;
+}
+.ban .banul li{
+	width:100%;
+	height:638px;
+	position: absolute;
+	top:0;
+	/* left:100%; */
+	left: 0;
+	display: none;
+}
+.ban .banul li.show{
+	display: block;
+}
+/* .ban .banul li:first-child{
+	left:0;
+} */
+.ban .banul li img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.bandian {
+	width:200px;
+	height:10px;
+	position: absolute;
+	left:50%;
+	top:92%;
+}
+.bandian li{
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	margin-right: 20px;
+	float: left;
+	background: #dfdcdc;
+	cursor: pointer;
+}
+.bandian li.active{
+	background: red;
+	/*顶部导航结束*/
+}
+.lefttop{
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    width: 150px;
+    height: 65px;
+    z-index: 99;
+    cursor: pointer;
+}
+.lefttop img{
+    width:100%;
+}
+/*服务开始*/
+.help{
+	width:100%;
+	height:700px;
+	background: url("../img/mk2bg.jpg") no-repeat ;
+	background-size: 100% 100%;
+	position: relative;
+}
+.help .content{
+	width: 1229px;
+	height: 291px;
+	position: absolute;
+	/* margin: 0 auto; */
+	top: 51%;
+	margin-top: -155px;
+	margin-left: 70px;
+}
+.help .content ul{
+	display: flex;
+	justify-content: space-around;
+}
+.help .content li{
+	float: left;
+	position: relative;
+	transition: all 1s;
+}
+.help .content li:hover{
+	letter-spacing: 6px;
+}
+.help .content li h3{
+	position: absolute;
+	top: 43%;
+	font-weight: normal;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	width: 288px;
+}
+.help .content li .hi{
+	width: 25px;
+	height: 2px;
+	color: white;
+	position: absolute;
+	top: 180px;
+	left: 100px;
+	background: #f1efed;
+}
+.help .content li:hover .h1{
+	width:40px;
+}
+.help .content li p{
+	font-size: 26px;
+	color: white;
+	text-align: center;
+}
+.help .content li img{
+	width:286px;
+	height:290px;
+}
+/*服务结束*/
+.wenzi a{
+	color: white;
+}
+/*图片开始*/
+/* 图片开始 */
+.photos{
+	width: 100%;
+	height: auto;
+	background: yellow;
+	position: relative;
+}
+.photos .img1{
+	width: 32%;
+	cursor: pointer;
+	overflow: hidden;
+}
+.photos .img1 img{
+	width: 100%;
+	transform: scale(1, 1);
+	transition: all 1s;
+}
+.photos .zi {
+	vertical-align: middle;
+	position: absolute;
+	height:30px;
+	width: 100%;
+	top: 50%;
+	display: block;
+	margin-top: -20px;
+	text-align: center;
+	transition: all 1.5s;
+}
+.photos .zi a{
+	font-size: 24px;
+	color: white;
+}
+.img1:hover{
+	letter-spacing: 10px;
+}
+.grayscale{
+	filter: grayscale(70%);
+	transform: scale(1, 1);
+
+}
+.grayscale:hover{
+	filter: grayscale(0);
+}
+/*图片结束*/
+/* 底部开始 */
+.footer{
+	background: #222222;
+	padding: 2em 0;
+	color: #888888;
+	line-height: 30px;
+	padding-top: 35px;
+	font-size: 0.93em;
+	height: 220px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 100px}
+.footer a{
+	color:#888888;
+}
+.footer a:hover{
+	text-decoration:none;
+}
+.footer-left{
+	float:left;
+	width:600px;
+	margin-left:25px;
+}
+.footer-left p{
+	margin:20px 0;
+	clear:both;}
+.footer-left p a{
+	padding:0 1.5em;
+	display:block;
+	float:left;
+	border-right:1px solid #838383;
+	height:16px;
+	line-height:16px;
+	margin:0 0 35px 0;
+}
+.footer-left p a:hover{
+	color:#2d8acb;
+}
+.footer-left p a:first-child{
+	padding-left:0;
+}
+.footer-left p a:last-child{
+	border-right:none;
+}
+.footer-left .a4{
+	background:url(../img/400-888-88881.png) no-repeat;
+	background-size:cover;
+	min-width:199px;
+	display:block;
+	float:left;
+	height:50px;
+	border:none;
+	margin:0 60px 0px 0; }
+.footer-left .a4:hover{
+	background:url(../img/400-888-88881-h.png) no-repeat;
+}
+.footer-left .a5{
+	background:url(../img/may8@live.png) no-repeat;
+	background-size:cover;
+	min-width:194px;
+	height:50px;
+	border-right:none 0px;
+	margin:0 0 0px 0;}
+.footer-left .a5:hover{
+	background:url(../img/may8@live-h.png) no-repeat;
+}
+.footer-right{
+	float:right;
+	text-align:center;
+	border-left:1px solid #434343;
+	padding:30px 10px;
+	margin-top:20px;}
+.footer-right ul li{
+	display:block;
+	float:left;
+	margin:0 10px;
+	width:80px;
+	float:left;
+	display:block;
+	text-align:center;
+}
+.footer-right ul li .a1{
+	background:url(../img/icon-05.png) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.footer-right ul li .a1:hover{
+	background:url(../img/icon-05-h.png) center no-repeat;
+}
+.footer-right ul li .a2{
+	background:url(../img/icon-06.png) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;
+}
+.footer-right ul li .a2:hover{
+	background:url(../img/icon-06-h.png) center no-repeat;
+}
+.footer-right ul li .a3{
+	background:url(../img/icon-07.png ) center no-repeat;
+	width:100%;
+	height:64px;
+	display:block;
+	float:left;
+	margin-bottom:10px;}
+.footer-right ul li .a3:hover{
+	background:url(../img/icon-07-h.png) center no-repeat;
+}
+/* 底部结束 */
+.shiping{
+	width: 100%;
+	height: 689px;
+	background: black;
+	margin-top: 3300px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
